@@ -1,5 +1,4 @@
 <p align="center"><img width=70% src="./images/steamDA.jpg"></p>
-
 <p align="center">
   <img alt="Static Badge" src="https://img.shields.io/badge/Status-Active-green">
   <img alt="Python" src="https://img.shields.io/badge/Python-v3.6%2B-blue">
@@ -7,6 +6,56 @@
     <img alt="Static Badge" src="https://img.shields.io/badge/License-MIT-orange">
   </a>
 </p>
+
+## Project Overview 🔬
+This project aims to comprehensively understand the Steam gaming market, covering a wide range of data science technologies including **data mining, complex data querying, data cleaning, feature engineering, data analysis, machine learning, and data visualization**. The research goals are as follows:
+-   Identify gaming market preferences across different countries.
+-   Classify different groups of players.
+-   Analyze both historically popular and currently trending games.
+-   Determine the market share of different game genres.
+-   Analyze the distribution of game pricing in the market.
+
+This project is suitable for professionals in the gaming market industry, game enthusiasts, and entry-level data analysts as a reference to enrich their understanding of the gaming market and to systematically learn about the complete data science workflow. We hope this project will be helpful to you : )
+
+## Environment Setup 🧶
+- To obtain a Steam API key, please click [here](https://steamcommunity.com/dev).
+- SQL Server 19
+- Based on Python:
+    - Pandas: Data analysis library
+    - NumPy: Supports large arrays and matrix operations
+    - Matplotlib: Plotting library
+    - Seaborn: Advanced visualization library based on Matplotlib
+    - scikit-learn: Simple and effective machine learning library
+    - asyncio: Structured network programming tool
+    - httpx: Structured network programming tool offering synchronous and asynchronous requests
+
+## Summary Files 🔭
+- Please refer to the Powerpoint file [Steam_DA_overview](./notebooks/Steam_DA_overview.pptx) for an overview of this project.
+- Please refer to the file [Technical_detail](./notebooks/Technical_detail.ipynb) to understand the technical details involved.
+
+## Workflow Introduction 💻
+<p align="center"><img width=100% src="./images/SteamDA_workflow.png"></p>
+
+0. **Obtain Steam API key**: Initially, you need to obtain your own key for data fetching.
+1. **Fetch player IDs**: Since there is no publicly available SteamID dataset, the first step involves fetching valid player IDs, please refer to the file👉[【Fetch IDs】](./src/1.%20data_extraction/extract_about_steam_ids/search_steamids.ipynb).
+2. **Fetch player information**: Collect various related information about the player IDs mentioned above, please refer to the file👉[【Fetch Player Info】](./src/1.%20data_extraction/extract_about_steam_ids/use_steam_api.ipynb).
+3. **JSON Repair**: Use the JSONchecker script to fix the fetched data, please use the file👉[【JSON Repair】](./src/3.%20data_cleaning/json_checker.ipynb)<br>
+4. **Data Extraction**:
+    - 4.1 **Complex Data Extraction Related to IDs**: Use pandas to query ID-related JSON files, please refer to the file👉[【Query Process】](./src/2.%20data_query/Steam_id_query_process.ipynb).
+    - 4.2 **Fetch Additional Game Information**: Call the API to fetch additional information about games played by the players, please refer to the file👉[【Fetch Game Info】](./src/1.%20data_extraction/extract_about_steam_games/Steam_game_infomation_fetcher.ipynb).
+    - 4.3 **JSON Repair**: Use the JSONchecker script again to fix the fetched data, please use the file👉[【JSON Repair】](./src/3.%20data_cleaning/json_checker.ipynb).
+    - 4.4 **Game Data Extraction**: Use pandas to query game-related JSON files, please refer to the file👉[【Query Process】](./src/2.%20data_query/Steam_game_query_process.ipynb).
+    - 4.5 **Table Organization and Merging**: Organize and merge the "ID" and "Game" related tables, please refer to the file👉[【Table Merge】](./src/2.%20data_query/Steam_id_and_game_merge_process.ipynb).
+5. **Data Cleaning**: Address format issues with various types of data, please refer to the file👉[【Data Cleaning】](./src/3.%20data_cleaning/cleaning_process.ipynb).
+6. **Feature Engineering and Data Analysis**: Analyze the data and add new parameters, please refer to the file👉[【Analysis Process】](./src/4.%20feature_enginering_and_data_analyze/analyze_process.ipynb).
+7. **Machine Learning**: Use a combination of PCA and K-means for unsupervised learning to categorize users, please refer to the file👉[【Machine Learning】](./src/5.machine_learning/unsupervise_learning_PCA_and_KMEANS_for_player_cluster.ipynb).
+8. **Data Visualization**: Visualize all the organized data, please refer to the file👉[【Visualization】](./src/6.visualization/plots.ipynb).
+
+## Recommended Reading 🛠️
+- Steam database https://steamdb.info/
+- Detailed information on the Steam Web API: https://steamcommunity.com/dev
+- Open-source project SteamKit: https://github.com/SteamRE/SteamKit
+- Flowchart creation tool: https://lucid.app
 
 ## 项目简介 🔬
 本项目以宏观理解Steam游戏市场为目的，全面涵盖数据科学的多项技术栈：**数据挖掘、复杂数据查询、数据清洗、特征工程、数据分析、机器学习、数据可视化等**，来实现下列研究目标：
@@ -29,6 +78,11 @@
     - scikit-learn：简单有效的机器学习库
     - asyncio：结构化网络编程工具
     - httpx：结构化网络编程工具，提供同步和异步请求功能
+
+## 总结文件🔭
+- 请查阅Powerpoint文件 [Steam_DA_overview](./notebooks/Steam_DA_overview.pptx) 概览本项目
+- 请查阅文件 [Technical_detail](./notebooks/Technical_detail.ipynb) 了解过程中的技术细节 
+
 
 ## 工作流程介绍 💻
 <p align="center"><img width=100% src="./images/SteamDA_workflow.png"></p>
