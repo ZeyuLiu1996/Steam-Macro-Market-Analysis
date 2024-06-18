@@ -30,8 +30,8 @@ This project is suitable for professionals in the gaming market industry, game e
     - httpx: Structured network programming tool offering synchronous and asynchronous requests
 
 ## Summary Files 🔭
-- Please refer to the Powerpoint file [Steam_DA_overview](./notebooks/Steam_DA_overview.pptx) for an overview of this project.
-- Please refer to the file [Technical_detail](./notebooks/Technical_detail.ipynb) to understand the technical details involved.
+- Please refer to the Powerpoint file [Steam_DA_overview](./doc/Steam_DA_overview.pptx) for an overview of this project.
+
 
 ## Workflow Introduction 💻
 <p align="center"><img width=100% src="./images/SteamDA_workflow.png"></p>
@@ -80,8 +80,7 @@ This project is suitable for professionals in the gaming market industry, game e
     - httpx：结构化网络编程工具，提供同步和异步请求功能
 
 ## 总结文件🔭
-- 请查阅Powerpoint文件 [Steam_DA_overview](./notebooks/Steam_DA_overview.pptx) 概览本项目
-- 请查阅文件 [Technical_detail](./notebooks/Technical_detail.ipynb) 了解过程中的技术细节 
+- 请查阅Powerpoint文件 [Steam_DA_overview](./doc/Steam_DA_overview.pptx) 概览本项目
 
 
 ## 工作流程介绍 💻
