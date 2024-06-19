@@ -15,7 +15,7 @@ This project aims to comprehensively understand the Steam gaming market, coverin
 -   Determine the market share of different game genres.
 -   Analyze the distribution of game pricing in the market.
 
-This project is suitable for professionals in the gaming market industry, game enthusiasts, and entry-level data analysts as a reference to enrich their understanding of the gaming market and to systematically learn about the complete data science workflow. We hope this project will be helpful to you : )
+This project is suitable for professionals in the gaming market industry, game enthusiasts, and entry-level data analysts as a reference to enrich their understanding of the gaming market and to systematically learn about the complete data science workflow. I hope this project will be helpful to you : )
 
 ## Environment Setup 🧶
 - To obtain a Steam API key, please click [here](https://steamcommunity.com/dev).
